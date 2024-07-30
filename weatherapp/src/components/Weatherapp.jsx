@@ -1,4 +1,4 @@
-import styles from "./Weathers.module.css";
+import styles from "./Weatherapp.module.css";
 import { useEffect, useState } from "react";
 const Weather = () => {
   const [city, setCity] = useState("");
