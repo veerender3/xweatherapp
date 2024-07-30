@@ -42,15 +42,15 @@ const Weather = () => {
             <h3>Tempature </h3>
             <p> {weather.current.temp_c}°C</p>
           </div>
-          <div className={styles.weatherCard}>
+          <div className="weather-cards">
             <h3>Humidity</h3>
             <p>{weather.current.humidity}%</p>
           </div>
-          <div className={styles.weatherCard}>
+          <div className="weather-cards">
             <h3> Condition </h3>
             <p>{weather.current.condition.text}</p>
           </div>
-          <div className={styles.weatherCard}>
+          <div className="weather-cards">
             <h3> Wind Speed </h3>
             <p>{weather.current.wind_kph} kph</p>
           </div>
