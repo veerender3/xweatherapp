@@ -37,8 +37,8 @@ const Weather = () => {
       <button onClick={handleSearch}>Search</button>
       {loading && <p>Loading data...</p>}
       {weather && weather.current && (
-        <div className = "weather-Cards" >
-          <div className= "weather-Card">
+        <div className = "weather-cards" >
+          <div className= "weather-card">
             <h3>Tempature </h3>
             <p> {weather.current.temp_c}°C</p>
           </div>
