@@ -1,4 +1,4 @@
-import styles from "./Weatherapp.module.css";
+import styles from "./Weathers.module.css";
 import { useEffect, useState } from "react";
 const Weather = () => {
   const [city, setCity] = useState("");
@@ -37,22 +37,22 @@ const Weather = () => {
       <button onClick={handleSearch}>Search</button>
       {loading && <p>Loading data...</p>}
       {weather && weather.current && (
-        <div className = "weather-cards" >
-          <div className= "weather-card">
+        <div className="weather-cards">
+          <div className="weather-card">
             <h3>Tempature </h3>
             <p> {weather.current.temp_c}°C</p>
           </div>
-          <div className="weather-cards">
+          <div className="weather-card">
             <h3>Humidity</h3>
             <p>{weather.current.humidity}%</p>
           </div>
-          <div className="weather-cards">
+          <div className="weather-card">
             <h3> Condition </h3>
             <p>{weather.current.condition.text}</p>
           </div>
-          <div className="weather-cards">
+          <div className="weather-card">
             <h3> Wind Speed </h3>
-            <p>{weather.current.wind_kph} kph</p>
+            <p>{weather.current.wind_kph}kph</p>
           </div>
         </div>
       )}
